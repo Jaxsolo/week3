@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Iris</title>
+</head>
+<body>
+    <form action="{{ url_for('predict')}}" method="POST">
+        Volatile_acidity:  <input type="number" name="volatile acidity"><br>
+        Chlorides:   <input type="number" name="chlorides"><br>
+        Density:  <input type="number" name="density"><br>
+        Alcohol:   <input type="number" name="alcohol"><br>
+      
+        <input type=submit    value=Submit>
+   </form>
+    My prediction: {{ predict }}
+</body>
+</html>
